@@ -19,7 +19,7 @@
         "api_type": 1,
 
         "__comment04__": "API_KEY FROM https://platform.openai.com/account/api-keys. ONLY FOR API 3",
-        "api_key": "",
+        "api_key": "process.env.GPT_API",
 
         "__comment05__": "MODEL NAME FOR API TYPE 3 (default: gpt-3.5-turbo)",
         "engine": "",
@@ -114,10 +114,10 @@
     "__comment06__": "BARD SETTINGS",
     "bard": {
         "__comment01__": "Go to Application -> Cookies -> __Secure-1PSID. Copy the value of that cookie",
-        "secure_1psid": "",
+        "secure_1psid": "process.env.BARD1_API",
 
         "__comment02__": "Go to Application -> Cookies -> __Secure-1PSIDTS. Copy the value of that cookie",
-        "secure_1psidts": "",
+        "secure_1psidts": "process.env.BARD2_API",
 
         "__comment03__": "IF NEEDED, SPECIFY PROXY IN THE http://IP:PORT FORMAT (SPECIFY HTTP EVEN IF IT IS HTTPS PROXY)",
         "__comment04__": "OR SET TO auto AND ENABLE proxy_automation TO AUTOMATICALLY SEARCH WORKING PROXIES",
@@ -133,7 +133,7 @@
     "__comment07__": "TELEGRAM SETTINGS",
     "telegram": {
         "__comment01__": "PROVIDE YOUR BOT API KEY FROM https://t.me/BotFather",
-        "api_key": "",
+        "api_key": "process.env.TELE_API",
 
         "__comment02__": "SPECIFY THE chat_id OF THOSE WHO CAN USE ADMINISTRATOR COMMANDS",
         "admin_ids": [],
